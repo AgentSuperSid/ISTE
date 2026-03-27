@@ -4,25 +4,25 @@ For example, do not use pow(x, 0.5) in c++ or x ** 0.5 in python.
  
 
 Example 1:
-'''
+```
 Input: x = 4
 Output: 2
 Explanation: The square root of 4 is 2, so we return 2.
-'''
+```
 
 Example 2:
-'''
+```
 Input: x = 8
 Output: 2
 Explanation: The square root of 8 is 2.82842..., and since we round it down to the nearest integer, 2 is returned.
- '''
+ ```
 
 Constraints:
 
-0 <= x <= 231 - 1
+`0 <= x <= 231 - 1`
 
 ### Your Solutiom:
-'''
+```
 class Solution {
 public:
         int mySqrt(int x) 
@@ -33,7 +33,7 @@ public:
             return x;
         }
         /*
-        unsigned int prev=1; // The first idea u got was brute force method
+        unsigned int prev=1; // The first idea u got was brute force method. It works, but not efficient.
         unsigned int i;
         for(i=1;((i*i <= x) && (i<= x/2)) ; i++)
         {
@@ -71,4 +71,4 @@ public:
         /* */
     }
 };
-'''
+```
