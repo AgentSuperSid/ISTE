@@ -21,7 +21,7 @@ Constraints:
 
 `0 <= x <= 231 - 1`
 
-### Your Solutiom:
+### Your Solution:
 ```
 class Solution {
 public:
