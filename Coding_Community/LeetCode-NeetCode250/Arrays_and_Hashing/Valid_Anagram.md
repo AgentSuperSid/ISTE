@@ -21,8 +21,8 @@ class Solution
 public:
     bool isAnagram(string s, string t) 
     {
-        std::unordered_map<char, int> dict1;
-        std::unordered_map<char, int> dict2;
+        unordered_map<char, int> dict1;
+        unordered_map<char, int> dict2;
         if(s.length() != t.length())
             return false;
         for(int i=0;i<s.length();i++)
@@ -45,6 +45,6 @@ public:
 };
 ```
 ### Learning
-- How to define and use a map (which is an equivalent to dictionary in python).
-- To add new keys and alter their values. Out of curiosity I even learnt how to delete a key using `.erase(key)`.
+- How to define and use a map (which is an equivalent to dictionary in python). Ordered map arranges keys based on numbers (1-100) or letters(a-z).
+- To add new keys and alter their values , how to delete a key using `.erase(key)`.
 - Operations that we can perform using two maps.
